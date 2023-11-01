@@ -8,16 +8,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="?page=dashboard">Home</a>
-        </li>         
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Usuário
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=dashboard&pag=usuario-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=dashboard&pag=usuario-cadastrar">Cadastrar</a></li>
-          </ul>
-        </li>
+        </li> 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            	 Departamento
@@ -29,11 +20,11 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Atendentes
+           	 Usuário
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=dashboard&pag=atendente-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=dashboard&pag=atendente-cadastrar">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="?page=dashboard&pag=usuario-listar">Listar</a></li>
+            <li><a class="dropdown-item" href="?page=dashboard&pag=usuario-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

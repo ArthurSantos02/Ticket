@@ -2,13 +2,17 @@
 	switch ($_REQUEST['acao']) {
 		case 'cadastrar':
 			$sql = "INSERT INTO usuario (
+						departamento_id_departamento, 
 						nome_usuario, 
 						senha_usuario, 
-						tipo_usuario
+						tipo_usuario,
+						email
 					)VALUES(
+						".$_POST["departamento_id_departamento"].", 
 						'".$_POST["nome_usuario"]."', 
 						'".md5($_POST["senha_usuario"])."', 
-						'".$_POST["tipo_usuario"]."'
+						'".$_POST["tipo_usuario"]."',
+						'".$_POST["email"]."'
 					)";
 
 				$res = $conn->query($sql);
@@ -24,8 +28,10 @@
 		
 		case 'editar':
 			$sql = "UPDATE usuario SET
+						departamento_id_departamento=".$_POST['departamento_id_departamento'].",
 						nome_usuario='".$_POST['nome_usuario']."',
-						tipo_usuario='".$_POST['tipo_usuario']."'
+						tipo_usuario='".$_POST['tipo_usuario']."',
+						email='".$_POST['email']."'
 					WHERE id_usuario=".$_POST["id_usuario"];
 
 			$res = $conn->query($sql);

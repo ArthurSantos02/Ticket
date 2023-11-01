@@ -34,21 +34,5 @@
     case 'usuario-salvar':
       include('usuario-salvar.php');
       break;
-    //atendente
-    case 'atendente-cadastrar':
-      include('atendente-cadastrar.php');
-      break;
-    case 'atendente-editar':
-      include('atendente-editar.php');
-      break;
-    case 'atendente-listar':
-      include('atendente-listar.php');
-      break;
-    case 'atendente-salvar':
-      include('atendente-salvar.php');
-      break;
-
-    default:
-      include('main.php');
   }
 ?>
